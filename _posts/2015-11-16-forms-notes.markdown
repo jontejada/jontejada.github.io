@@ -19,9 +19,9 @@ categories: galvanize notes
 ##the `<input>` element
 * no end tag `</input>`
 * set by `type=` attr
-	* default is single line `'text'`
+	* `'text'` default is a single line text box 
 	* `'checkbox'`
-		* must use `value='something` to include in submit
+		* must use `value='something'` to include in submit
 		* `checked` boolean attr will set it as checked to start
 	* `color` color button with color picker UI
 		* PARTIAL SUPPORT
@@ -56,7 +56,7 @@ categories: galvanize notes
 		* `search`
 	* lots more
 * clicking the `<label for='an_input_id'>` element will give focus to the corresponding input
-	* the label element can contain the input (don't need `for` attr for this)
+	* the label element can contain the input it labels (don't need `for` attr for this)
 
 ##other form input elements
 * `<select name='a_name'>` offers menu of options

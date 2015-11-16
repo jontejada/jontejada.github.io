@@ -5,7 +5,8 @@ date: 2015-11-15 11:26:00 -800
 categories: galvanize notes
 ---
 #APIs from the front end
-2015-11-11 d18
+from 2015-11-11 d18
+
 ##What is an API?
 * [application programming interface](https://en.wikipedia.org/wiki/Web_API)
 * any mechanism to ask for something from a program

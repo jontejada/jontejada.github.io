@@ -1,21 +1,30 @@
-# Welcome to Jekyll!
+# Permalinks
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
 
-# Site settings
-title: jontejada.com
-email: jon@jontejada.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.jontejada.com" # the base hostname & protocol for your site
-twitter_username: 
-github_username:  jontejada
+# Setup
+title:               jontejada.com
+tagline:             blog +
+url:                 http://www.jontejada.com
+paginate:            1
+baseurl:             ""
 
-# Build settings
-markdown: kramdown
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Jon Tejada
+  url:               https://www.jontejada.com
+  email:             
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/jontejada/jontejada.github.io

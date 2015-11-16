@@ -1,2 +1,5 @@
-# jontejada.github.io
-personal website built with the GitHub Automatic Page Generator
+# http://www.jontejada.com
+
+personal website
+
+jontejada.github.io

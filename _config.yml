@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               jontejada.com
 tagline:             blog +
 url:                 http://www.jontejada.com
-paginate:            4
+paginate:            1
 baseurl:             ""
 
 # Assets
@@ -28,3 +28,5 @@ author:
 version:             2.0.0
 github:
   repo:              https://github.com/jontejada/jontejada.github.io
+
+

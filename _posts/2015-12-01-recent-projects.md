@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Recent Projects"
+date: 2015-12-01 10:00:00 -800
+categories: galvanize projects
+---
+
+##[Pixel Art](http://www.jontejada.com/pixel_art/)
+
+##[Spotify Search](http://www.jontejada.com/spotify-albums-and-tracks/)
+
+##[Sedona Stone Veneer photo gallery](http://www.jontejada.com/SSV/)
+
+##[Galvainze Eats](http://www.jontejada.com/eats/)

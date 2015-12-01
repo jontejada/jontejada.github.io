@@ -7,6 +7,9 @@ categories: galvanize projects
 
 ##[Pixel Art](http://www.jontejada.com/pixel_art/)
 
+<img src="{{ site.baseurl }}/assets/pixel_art.png">
+
+
 ##[Spotify Search](http://www.jontejada.com/spotify-albums-and-tracks/)
 
 ##[Sedona Stone Veneer photo gallery](http://www.jontejada.com/SSV/)

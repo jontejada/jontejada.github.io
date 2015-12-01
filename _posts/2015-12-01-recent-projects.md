@@ -11,7 +11,7 @@ categories: galvanize projects
 
 ##[Spotify Search](http://www.jontejada.com/spotify-albums-and-tracks/)
 
-![spotify search screenshot]({{ site.baseurl }}/assets/spotify_search.png)
+![spotify search screenshot]({{ site.baseurl }}/assets/spotify_search_bc.png)
 
 ##[Sedona Stone Veneer photo gallery](http://www.jontejada.com/SSV/)
 

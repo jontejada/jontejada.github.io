@@ -4,8 +4,6 @@ title: "Notes on HTML forms"
 date: 2015-11-15 11:10:00 -800
 categories: galvanize notes
 ---
-#HTML forms
-
 ## the `<form>` element
 * `method=` attribute sets the HTTP submit method
 	* `'post'` form data sent to server

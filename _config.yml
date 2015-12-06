@@ -29,4 +29,7 @@ version:             2.0.0
 github:
   repo:              https://github.com/jontejada/jontejada.github.io
 
-markdown: kramdown
+# Make redcarpet behave like GitHub Flavored Markdown
+markdown: redcarpet
+redcarpet:
+ extensions: ["tables"]

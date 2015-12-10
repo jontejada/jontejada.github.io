@@ -1,5 +1,5 @@
 # http://www.jontejada.com
 
-personal website
+github pages hosted personal website
 
 jontejada.github.io

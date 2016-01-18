@@ -59,7 +59,7 @@ categories: galvanize notes
 ##other form input elements
 * `<select name='a_name'>` offers menu of options
 	* has `<option>OPT 1</option>` children
-		* `value='option1'` attr is optional. Without this, deafult is element contents, e.g. `OPT 1` above
+		* `value='option1'` attr is optional. Without this, default is element contents, e.g. `OPT 1` above
 		* `selected` boolean attr to give initial selection
 		* `<optgroup label='group 1'>` is optional parent to grouped options
 	* `multiple` boolean attr allows selection of multiple options

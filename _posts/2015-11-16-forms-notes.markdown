@@ -63,7 +63,7 @@ categories: galvanize notes
 		* `selected` boolean attr to give initial selection
 		* `<optgroup label='group 1'>` is optional parent to grouped options
 	* `multiple` boolean attr allows selection of multiple options
-	* `size='4'` attr sets number of diplayed rows
+	* `size='4'` attr sets number of displayed rows
 * `<textarea>` multi-line text input
 	* `cols='30'` attr sets visible width in average character widths, 20 default
 	* `rows='4'` sets height, 2 default

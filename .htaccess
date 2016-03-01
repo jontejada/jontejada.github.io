@@ -1,0 +1,1 @@
+RedirectMatch 301 ^/resume(.*) http://www.jontejada.com/jt2/static/Jon_Tejada_resume.pdf

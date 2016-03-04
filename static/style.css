@@ -1,0 +1,127 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Helvetica Neue', sans-serif;*/
+    /*background-color: #FFFCF9;*/
+    /*background-color: #4DA1A9;*/
+    color: #2C8C99;
+    text-align: center;
+}
+
+.bkcol {
+	background-color: #06D6A0;
+}
+
+h2,h1 {
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+p {
+    /*color: #EF476F;*/
+    /*color: #FFA630;*/
+    /*font-weight: 400;*/
+    /*letter-spacing: 2px;*/
+}
+
+
+.header {
+    margin-top: 50px;
+}
+
+.fa {
+    margin-left:12px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #2C8C99;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #2C8C99;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #2C8C99;
+}
+
+a:active {
+    text-decoration: none;
+    color: #2C8C99;
+}
+
+#hi {
+    position: absolute;
+    right:0;
+    top:0;
+    width:300px;
+}
+
+@media screen and (min-width: 700px) {
+    #hi {
+        width: 400px;
+    }
+}
+
+#title {
+    color: #FFA630;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /*border-bottom: 1px solid #EF476F;*/
+    /*border-radius: 2px;*/
+    /*padding:2px 0px;*/
+}
+
+/* parent folio <div> container */
+.folio {
+    margin-top: 30px;
+}
+
+/* <img> */
+.folio-item {
+    width:260px;
+    border-top:   10px solid #424242;
+    border-bottom: 2px solid #424242;
+    border-left:   2px solid #424242;
+    border-right:  2px solid #424242;
+    border-radius: 2px;
+}
+
+/* full descrption <div> */
+.folio-desc {
+    text-align: center;
+    width:260px;
+    height: 140px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:10px;
+    line-height: 1.2;
+}
+
+/* main text <p> */
+.folio-text {
+    text-align: left;
+    color:#424242;
+    letter-spacing: 0;
+    /*color:#2C8C99;*/
+    font-size: 80%;
+}
+
+/* title <span> */
+.folio-title {
+    letter-spacing: 1px;
+    font-weight:900;
+    color:#424242;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+
+
+
+
+

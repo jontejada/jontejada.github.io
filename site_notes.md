@@ -1,1 +1,0 @@
-# Make redcarpet behave like GitHub Flavored Markdown redcarpet: extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]

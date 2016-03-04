@@ -1,19 +1,29 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-	/*font-family: 'Helvetica Neue', sans-serif;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Helvetica Neue', sans-serif;
     /*background-color: #FFFCF9;*/
     /*background-color: #4DA1A9;*/
     color: #2C8C99;
     text-align: center;
+    background-image: url("hi.png");
+    background-position: right top; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+    background-size:50%;
 }
 
 .bkcol {
 	background-color: #06D6A0;
 }
 
-h2,h1 {
+h1 {
+    font-size: 500%;
     font-weight: 100;
     letter-spacing: 1px;
+
+}
+
+h2 {
+    font-weight: 100;
 }
 
 p {
@@ -63,12 +73,16 @@ a:active {
     #hi {
         width: 400px;
     }
+    body {
+        background-size: 35%;
+    }
 }
 
-#title {
+p {
     color: #FFA630;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 2px;
+    font-size: 130%;
     /*border-bottom: 1px solid #EF476F;*/
     /*border-radius: 2px;*/
     /*padding:2px 0px;*/

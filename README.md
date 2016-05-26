@@ -1,4 +1,4 @@
-#[jontejada.com](jontejada.com) personal site v3
+#[jontejada.com](http://jontejada.com) personal site v3
 
 ##Bootstrap 4 (alpha release)
 - uses Bootstrap v4.0.0-alpha.2 css (no JS)

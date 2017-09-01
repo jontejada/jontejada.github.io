@@ -4,4 +4,3 @@
 - uses Bootstrap v4.0.0-alpha.2 css (no JS)
 - mobile responsive 12 column layout
 - [setup instructions](http://v4-alpha.getbootstrap.com/getting-started/build-tools/#tooling-setup)
-

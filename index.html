@@ -35,6 +35,17 @@
             ul {
                 margin-top: 0;
             }
+            .name {
+                font-size: 2em;
+                text-align: left;
+            }
+            .contact {
+                float: right;
+                text-align: right;
+            }
+            .summary {
+                background-color: yellow;
+            }
             @media print {
                 .dont-print {
                     display: none;
@@ -54,25 +65,22 @@
             <a href="/Jon_Tejada_resume.pdf">PDF resume</a>
         </span>
         <header>
-            <h1>Jon Tejada</h1>
-            <p><a href="mailto:&#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;">&#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;</a></p>
-            <p>480.220.1529</p>
-            <p>San Francisco</p>
+            <span class="contact">
+                <a href="mailto:&#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;">&#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;</a>
+                <span>480 - 220 - 1529</span>
+            </span>
+            <p class="name">Jon Tejada</p>
         </header>
         <main>
-            <ul>
-            <li>Frontend software engineering</li>
-            <li>Product management</li>
-            <li>MIT engineering degree</li>
-            <li>Skilled in Javascript ES5+ React Redux Node CSS HTML Git Docker AWS Storybook Jenkins Angular Backbone Mocha GraphQL SQL HTTPS Agile Scrum Jira Sketch</li>
-            </ul>
+            <span class="entry summary">Empathetic product manager, MIT-trained engineer, driven entrepreneur</span>
             <span class="entry">
                 <h3>Senior Frontend Engineer, AppDirect</h3>
                 <h4>San Francisco June 2016 – Nov 2018</h4>
                 <ul>
-                    <li>Development of a React/Redux web application for real-time business intelligence and data visualization.</li>
-                    <li>Built FE for multi-factor authentication flows as lead frontend developer on Identity & Access Management engineering team. </li>
-                    <li>Decreased UX friction and introduced new features in core user assignment flows by eliminating technical debt and authoring modern SPAs. Contributed to ideation and design of new features.</li>
+                    <li>Development of fully-featured React web app for real-time business intelligence and data visualization.</li>
+                    <li>Scrum & product owner responsibilities on Agile development teams.</li>
+                    <li>Built FE for multi-factor authentication flows as lead FE developer on Identity & Access Management engineering team.</li>
+                    <li>Decreased UX friction and introduced new features in core user assignment flows with technical debt elimination and authoring modern SPAs. Contributed to ideation and design of new features.</li>
                     <li>Squashed bugs and implemented testing frameworks to ensure deployment of high quality code. On-call incident response.</li>
                 </ul>
             </span>
@@ -80,25 +88,27 @@
                 <h3>Technical Lead, Envirocrete LLC</h3>
                 <h4>Chandler, AZ 2009 – 2016</h4>
                 <ul>
-                    <li>Built and maintained online presence - catalog, store, analytics, SEO, AdWords.</li>
-                    <li>Established stone veneer manufacturing company. Formulated and developed four product lines. Sourced raw materials from US, Mexico & China. Set up 10k sq ft production facility. Established efficient production workflow for employees.</li>
+                    <li>Established stone veneer manufacturing company. Formulated and developed 4 product lines. Sourced raw materials from US, Mexico & China. Set up 10k sqft production & distribution facility with efficient employees workflows.</li>
+                    <li>Built & maintained online storefront and digital marketing.</li>
                 </ul>
             </span>
             <span class="entry">
                 <h3>Cofounder, Rezver Inc</h3>
                 <h4>Phoenix, AZ 2007 – 2009</h4>
                 <ul>
-                    <li>Set up pilot supplement production facility and online presence.</li>
-                    <li>Translated MIT Biotechnology lab research into market ready products with extensive quality control testing. Authored provisional patent application.</li>
+                    <li>Translated biotechnology research findings into market ready products. Set up pilot production facility with extensive quality control testing. Built online presence, authored provisional patent application.</li>
                 </ul>
             </span>
             <span class="entry">
                 <h3>B.S., Massachusetts Institute of Technology</h3>
                 <h4>Cambridge, MA 2007</h4>
                 <ul>
-                    <li>Managed complex research projects in bioengineering labs. Authored programs for data collection and analysis, saving researchers several hundred hours.</li>
-                    <li>Rigorous engineering coursework. Bachelor of Science degree in Materials Science & Engineering with additional concentration in Economics.</li>
+                    <li>Managed complex bioengineering lab research projects. Wrote programs for data collection and analysis, saving researchers several hundred hours. Scientific publication co-authorship.</li>
+                    <li>Rigorous engineering coursework. Bachelor of Science degree in Materials Science & Engineering with concentration in Economics.</li>
                 </ul>
+            </span>
+            <span class="entry">
+                Skilled in Agile Scrum Jira Sketch MVP Persona development Story development Prototyping Balsamiq Prioritization A/B testing Javascript ES5+ React Redux Node CSS HTML Git Docker Analytics Metrics UI UX design Photoshop Illustrator AWS Deployment Jenkins Angular Backbone Mocha GraphQL SQL HTTPS APIs SEO
             </span>
         </main>
     </body>

@@ -4,22 +4,10 @@
         <title>Jon Tejada resume</title>
         <meta content="text/html; charset=UTF-8" http-equiv="content-type">
         <style type="text/css">
-            @font-face {
-                font-family: 'Overpass Mono';
-                font-style: normal;
-                font-weight: 400;
-                src: local('Overpass Mono Regular'), local('OverpassMono-Regular'), url(https://fonts.gstatic.com/s/overpassmono/v4/_Xmq-H86tzKDdAPa-KPQZ-AC1i-0tt21C34.woff2) format('woff2');
-                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-            }
-            @font-face {
-                font-family: 'Overpass Mono';
-                font-style: normal;
-                font-weight: 700;
-                src: local('Overpass Mono Bold'), local('OverpassMono-Bold'), url(https://fonts.gstatic.com/s/overpassmono/v4/_Xm3-H86tzKDdAPa-KPQZ-AC3pSRo_CXBlRc4EU.woff2) format('woff2');
-                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-            }
+            @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
             body {
-                font-family: "Overpass Mono";
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
                 padding: 0 2%;
             }
             header > * {
@@ -27,15 +15,18 @@
                 text-align: center;
             }
             h3 {
+                font-weight: 400;
                 margin: 1.5em 0 0;
             }
             h4 {
+                font-weight: 300;
                 margin: 0;
             }
             ul {
                 margin-top: 0;
             }
             .name {
+                font-weight: 100;
                 font-size: 2em;
                 text-align: left;
             }
@@ -44,7 +35,7 @@
                 text-align: right;
             }
             .summary {
-                background-color: yellow;
+                background-color: #88ffd0;
             }
             @media print {
                 .dont-print {
@@ -74,41 +65,47 @@
         <main>
             <span class="entry summary">Empathetic product manager, MIT-trained engineer, driven entrepreneur</span>
             <span class="entry">
+                <h3>Consultant, Envirocrete LLC</h3>
+                <h4>Chandler, AZ / San Francisco, CA Nov 2018 – present</h4>
+                <ul>
+                    <li>Act on customer feedback and user analytics to improve conversion, sales and customer satisfaction / NPS. Overhauling sales process and customer communication. </li>
+                </ul>
+            </span>
+            <span class="entry">
                 <h3>Senior Frontend Engineer, AppDirect</h3>
                 <h4>San Francisco June 2016 – Nov 2018</h4>
                 <ul>
-                    <li>Development of fully-featured React web app for real-time business intelligence and data visualization.</li>
-                    <li>Scrum & product owner responsibilities on Agile development teams.</li>
-                    <li>Built FE for multi-factor authentication flows as lead FE developer on Identity & Access Management engineering team.</li>
-                    <li>Decreased UX friction and introduced new features in core user assignment flows with technical debt elimination and authoring modern SPAs. Contributed to ideation and design of new features.</li>
-                    <li>Squashed bugs and implemented testing frameworks to ensure deployment of high quality code. On-call incident response.</li>
+                    <li>Development of React SPA for real-time business intelligence and KPI visualization. Built FE for multi-factor authentication flows as lead FE developer on IAM engineering team. Squashed bugs, implemented testing frameworks, deployed high quality code. On-call incident response.</li>
+                    <li>Product owner & Scrum master on Agile development teams. Ideation, design and prioritization of new features, particularly in core user assignment flows. Decreased UX friction and technical debt in existing products.</li>
                 </ul>
             </span>
             <span class="entry">
-                <h3>Technical Lead, Envirocrete LLC</h3>
+                <h3>Co-founder & Product Owner, Envirocrete LLC</h3>
                 <h4>Chandler, AZ 2009 – 2016</h4>
                 <ul>
-                    <li>Established stone veneer manufacturing company. Formulated and developed 4 product lines. Sourced raw materials from US, Mexico & China. Set up 10k sqft production & distribution facility with efficient employees workflows.</li>
-                    <li>Built & maintained online storefront and digital marketing.</li>
+                    <li>Formulated and developed Magnesium cement product lines with reduced carbon footprint and superior performance for homeowners and developers (B2C & B2B).</li>
+                    <li>Set up 12k sq ft stone veneer production facility & 2 acre distribution yard with efficient employee workflows and raw materials sourced from US, Mexico & China.</li>
+                    <li>Built & maintained online storefronts, digital marketing and CRM.</li>
                 </ul>
             </span>
             <span class="entry">
-                <h3>Cofounder, Rezver Inc</h3>
+                <h3>Engineer, Rezver Inc</h3>
                 <h4>Phoenix, AZ 2007 – 2009</h4>
                 <ul>
-                    <li>Translated biotechnology research findings into market ready products. Set up pilot production facility with extensive quality control testing. Built online presence, authored provisional patent application.</li>
+                    <li>Translated biotechnology research findings into market ready products. Set up pilot production facility with extensive quality control testing. Built online presence, authored provisional patent application. Company closure despite lean manufacturing of MVP.</li>
                 </ul>
             </span>
             <span class="entry">
                 <h3>B.S., Massachusetts Institute of Technology</h3>
-                <h4>Cambridge, MA 2007</h4>
+                <h4>Cambridge, MA 2003 - 2007</h4>
                 <ul>
-                    <li>Managed complex bioengineering lab research projects. Wrote programs for data collection and analysis, saving researchers several hundred hours. Scientific publication co-authorship.</li>
-                    <li>Rigorous engineering coursework. Bachelor of Science degree in Materials Science & Engineering with concentration in Economics.</li>
+                    <li>Rigorous engineering coursework for Materials Science & Engineering degree. Management & microeconomics concentration grounded in data-based decision making. </li>
+                    <li>Managed complex bioengineering lab research projects. Authored software for data collection, validation and analysis, saving researchers several hundred hours. Scientific publication co-authorships.</li>
+                    <li>Sustainability Working Group leadership. Rowed on NCAA Division I Varsity Crew.</li>
                 </ul>
             </span>
             <span class="entry">
-                Skilled in Agile Scrum Jira Sketch MVP Persona development Story development Prototyping Balsamiq Prioritization A/B testing Javascript ES5+ React Redux Node CSS HTML Git Docker Analytics Metrics UI UX design Photoshop Illustrator AWS Deployment Jenkins Angular Backbone Mocha GraphQL SQL HTTPS APIs SEO
+                Skilled in  Agile  Scrum  Jira  Sketch  MVP  Persona development  Story development  Prototyping  Balsamiq  Prioritization  A/B testing  Javascript  ES5+  React  Redux  Node  CSS  HTML  Git  Docker  Analytics  Metrics  UI  UX  design  Photoshop  Illustrator  AWS  Deployment  Jenkins  Angular  Backbone  Mocha  GraphQL  SQL  HTTPS  APIs  SEO
             </span>
         </main>
     </body>

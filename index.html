@@ -5,41 +5,121 @@
         <meta content="text/html; charset=UTF-8" http-equiv="content-type">
         <style type="text/css">
             @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
+            :root {
+                --teal: #0dd29f;
+                --blue: #2e8ec8;
+                --highlight: #88ffd0;
+            }
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
             body {
                 font-family: "Roboto", sans-serif;
                 font-weight: 300;
-                padding: 0 2%;
+                padding: 2%;
+                background: linear-gradient(85deg, var(--teal), var(--blue));
+                background-size: 400% 400%;
+                animation: BkFade 60s ease infinite;
+
             }
-            header > * {
-                margin: 0;
-                text-align: center;
+            @keyframes BkFade {
+                0%{background-position:0% 75%}
+                50%{background-position:100% 26%}
+                100%{background-position:0% 75%}
             }
+            .wrapper {
+                width: 98%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 10fr 1fr;
+                grid-gap: 1em;
+            }
+            .entry {
+                padding: 0 0 1em 0;
+            }
+
             h3 {
                 font-weight: 400;
-                margin: 1.5em 0 0;
-            }
-            h4 {
-                font-weight: 300;
-                margin: 0;
             }
             ul {
-                margin-top: 0;
+                margin: 0 1.1em;
             }
             .name {
                 font-weight: 100;
-                font-size: 2em;
-                text-align: left;
-            }
-            .contact {
-                float: right;
-                text-align: right;
+                font-size: 2.2em;
             }
             .summary {
-                background-color: #88ffd0;
+                background-color: var(--highlight);
+                padding: 0.2em;
+                border-radius: 2px;
+            }
+            img {
+                border-radius: 3px;
+                width: 12em;
+            }
+            .resume {
+                max-width: 60em;
+                padding: 1.4em;
+                background-color: white;
+                border-radius: 3px;
+            }
+            svg {
+                fill: white;
+                width: 2em;
+                height: 2em;
+            }
+            a {
+                text-decoration: none;
+            }
+            .linktext {
+                color: white;
+                letter-spacing: 0.07em;
+            }
+            .social {
+                height: 4em;
+                text-align: center;
+                margin: 2em;
+            }
+            .hiddenContactInfo {
+                display: none;
+            }
+            @media screen and (max-width: 1000px) {
+                body {
+                    padding: 1%;
+                }
+                .wrapper {
+                    grid-gap: 0.5em;
+                }
+                img {
+                    width: 5em;
+                }
+                .social {
+                    margin: 1em;
+                    height: 3em;
+                }
+                .linktext{
+                    display: none;
+                }
             }
             @media print {
-                .dont-print {
+                .wrapper {
+                    width: 100%;
+                    grid-template-columns: 1fr;
+                }
+                .hiddenContactInfo {
+                    display: block;
+                    text-align: right;
+                }
+                .sidebar {
                     display: none;
+                }
+                .summary {
+                    display: none;
+                }
+                .entry {
+                    padding: 0 0 0.75em 0;
                 }
             }
         </style>
@@ -52,64 +132,100 @@
         </script>
     </head>
     <body>
-        <span class="pdf dont-print">
-            <a href="/Jon_Tejada_resume.pdf">PDF resume</a>
-        </span>
-        <header>
-            <span class="contact">
-                <a href="mailto:&#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;">&#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;</a>
-                <span>480 - 220 - 1529</span>
-            </span>
-            <p class="name">Jon Tejada</p>
-        </header>
-        <main>
-            <span class="entry summary">Experienced software engineer & entrepreneur. Empathetic & technically skilled.</span>
-            <span class="entry">
-                <h3>Product Consultant (contract), Envirocrete LLC</h3>
-                <h4>Chandler, AZ / San Francisco, CA Nov 2018 – present</h4>
-                <ul>
-                    <li>Code and deploy new versions of website, workflow/inventory management.</li>
-                    <li>Act on customer feedback and user analytics to improve conversion, sales and customer satisfaction / NPS. Overhauling sales process and customer communication.</li>
-                </ul>
-            </span>
-            <span class="entry">
-                <h3>Senior Frontend Engineer, AppDirect Inc</h3>
-                <h4>San Francisco June 2016 – Nov 2018</h4>
-                <ul>
-                    <li>Development of React web app for real-time business intelligence and KPI visualization.</li>
-                    <li>Built multi-factor authentication flows as lead front end developer on IAM eng team.</li>
-                    <li>Decreased UX friction and technical debt in existing products.</li>
-                    <li>Squashed bugs, implemented testing frameworks, deployed high quality code.</li>
-                    <li>Design and prioritization of features, particularly in core user assignment flows. </li>
-                </ul>
-            </span>
-            <span class="entry">
-                <h3>Co-founder & Product Owner, Envirocrete LLC</h3>
-                <h4>Chandler, AZ 2009 – 2016</h4>
-                <ul>
-                    <li>Formulated and developed Magnesium cement product lines with reduced carbon footprint and superior performance for homeowners and developers (B2C & B2B).</li>
-                    <li>Built & maintained online storefronts, digital marketing and CRM.</li>
-                    <li>Set up 12k sq ft stone veneer production facility & 2 acre distribution yard with efficient employee workflows and raw materials sourced from US, Mexico & China.</li>
-                </ul>
-            </span>
-            <span class="entry">
-                <h3>Engineer, Rezver Inc</h3>
-                <h4>Phoenix, AZ 2007 – 2009</h4>
-                <ul>
-                    <li>Translated biotechnology research findings into market ready products. Set up pilot production facility with extensive quality control testing.</li>
-                    <li>Built online presence, authored provisional patent application.</li>
-                </ul>
-            </span>
-            <span class="entry">
-                <h3>B.S., Massachusetts Institute of Technology</h3>
-                <h4>Cambridge, MA 2003 - 2007</h4>
-                <ul>
-                    <li>Rigorous engineering coursework for B.S. degree in Materials Science & Engineering.</li>
-                    <li>Bioengineering lab research. Authored software for data collection, validation and analysis, saving researchers several hundred hours. Scientific publication co-authorships.</li>
-                    <li>Sustainability Working Group leadership. Rowed on NCAA Division I Varsity Crew.</li>
-                </ul>
-            </span>
-            <span class="entry">Skilled in Javascript ES5+ React Redux Node CSS HTML Git Docker Analytics UI/UX AWS Deployment Jenkins Angular Backbone Mocha GraphQL SQL HTTP APIs SEO Agile Scrum Jira Prototyping A/B testing</span>
+        <main class=wrapper>
+            <div class="resume">
+                <div class="entry hiddenContactInfo">
+                    &#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;
+                    480.220.1529
+                </div>
+                <div class="entry">
+                    <span class="name">Jon Tejada</span>
+                    <span class="summary">Experienced software engineer & entrepreneur. Empathetic & technically skilled.</span>
+                </div>
+                <div class="entry">
+                    <h3>Product Consultant (contract), Envirocrete LLC</h3>
+                    <em>San Francisco, CA / Chandler, AZ Nov 2018 – present</em>
+                    <ul>
+                        <li>Code and deploy new versions of website, workflow/inventory management.</li>
+                        <li>Act on customer feedback and user analytics to improve conversion, sales and customer satisfaction / NPS. Overhauling sales process and customer communication.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <h3>Senior Frontend Engineer, AppDirect Inc</h3>
+                    <em>San Francisco June 2016 – Nov 2018</em>
+                    <ul>
+                        <li>Development of React web app for real-time business intelligence and KPI visualization.</li>
+                        <li>Built multi-factor authentication flows as lead front end developer on IAM eng team.</li>
+                        <li>Decreased UX friction and technical debt in existing products.</li>
+                        <li>Squashed bugs, implemented testing frameworks, deployed high quality code.</li>
+                        <li>Design and prioritization of features, particularly in core user assignment flows. </li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <h3>Co-founder & Product Owner, Envirocrete LLC</h3>
+                    <em>Chandler, AZ 2009 – 2016</em>
+                    <ul>
+                        <li>Formulated and developed Magnesium cement product lines with reduced carbon footprint and superior performance for homeowners and developers (B2C & B2B).</li>
+                        <li>Built & maintained online storefronts, digital marketing and CRM.</li>
+                        <li>Set up 12k sq ft stone veneer production facility & 2 acre distribution yard with efficient employee workflows and raw materials sourced from US, Mexico & China.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <h3>Engineer, Rezver Inc</h3>
+                    <em>Phoenix, AZ 2007 – 2009</em>
+                    <ul>
+                        <li>Translated biotechnology research findings into market ready products. Set up pilot production facility with extensive quality control testing.</li>
+                        <li>Built online presence, authored provisional patent application.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <h3>B.S., Massachusetts Institute of Technology</h3>
+                    <em>Cambridge, MA 2003 - 2007</em>
+                    <ul>
+                        <li>Rigorous engineering coursework for B.S. degree in Materials Science & Engineering.</li>
+                        <li>Bioengineering lab research. Authored software for data collection, validation and analysis, saving researchers several hundred hours. Scientific publication co-authorships.</li>
+                        <li>Sustainability Working Group leadership. Rowed on NCAA Division I Varsity Crew.</li>
+                    </ul>
+                </div>
+                <div class="entry">Skilled in Javascript ES5+ React Redux Node CSS HTML Git Docker Analytics UI/UX AWS Deployment Jenkins Angular Backbone Mocha GraphQL SQL HTTP APIs SEO Agile Scrum Jira Prototyping A/B testing</div>
+            </div>
+            <div class="sidebar">
+                <img src="assets/seaRanch.jpg" />
+                <div class="social">
+                    <a href="https://github.com/jontejada">
+                        <svg id="github"xmlns="http://www.w3.org/2000/svg"><path d="m15 3c-6.627 0-12 5.373-12 12 0 5.623 3.872 10.328 9.092 11.63-.056-.162-.092-.35-.092-.583v-2.051c-.487 0-1.303 0-1.508 0-.821 0-1.551-.353-1.905-1.009-.393-.729-.461-1.844-1.435-2.526-.289-.227-.069-.486.264-.451.615.174 1.125.596 1.605 1.222.478.627.703.769 1.596.769.433 0 1.081-.025 1.691-.121.328-.833.895-1.6 1.588-1.962-3.996-.411-5.903-2.399-5.903-5.098 0-1.162.495-2.286 1.336-3.233-.276-.94-.623-2.857.106-3.587 1.798 0 2.885 1.166 3.146 1.481.896-.307 1.88-.481 2.914-.481 1.036 0 2.024.174 2.922.483.258-.313 1.346-1.483 3.148-1.483.732.731.381 2.656.102 3.594.836.945 1.328 2.066 1.328 3.226 0 2.697-1.904 4.684-5.894 5.097 1.098.573 1.899 2.183 1.899 3.396v2.734c0 .104-.023.179-.035.268 4.676-1.639 8.035-6.079 8.035-11.315 0-6.627-5.373-12-12-12z"/></svg>
+                        <div class="linktext">/jontejada</div>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/jontejada/">
+                        <svg id="linkedin" viewBox="0 0 50 50" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg>
+                        <div class="linktext">/jontejada</div>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com/tejada">
+                        <svg id="facebook"xmlns="http://www.w3.org/2000/svg"><path d="m24 4h-18c-1.105 0-2 .895-2 2v18c0 1.105.895 2 2 2h10v-9h-3v-3h3v-1.611c0-3.05 1.486-4.389 4.021-4.389 1.214 0 1.856.09 2.16.131v2.869h-1.729c-1.076 0-1.452.568-1.452 1.718v1.282h3.154l-.428 3h-2.726v9h5c1.105 0 2-.895 2-2v-18c0-1.105-.896-2-2-2z"/></svg> 
+                    <div class="linktext">/tejada</div>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="mailto:&#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;">
+                        <svg xmlns="http://www.w3.org/2000/svg"><path d="M 4 5 C 2.9069372 5 2 5.9069372 2 7 L 2 23 C 2 24.093063 2.9069372 25 4 25 L 26 25 C 27.093063 25 28 24.093063 28 23 L 28 7 C 28 5.9069372 27.093063 5 26 5 L 4 5 z M 6.6992188 7 L 23.300781 7 L 15 13.134766 L 6.6992188 7 z M 5 9.4746094 L 15 16.865234 L 25 9.4746094 L 25 23 L 5 23 L 5 9.4746094 z"/></svg>
+                    <div class="linktext">&#104;&#105;&#064;&#106;&#111;&#110;&#116;&#101;&#106;&#097;&#100;&#097;&#046;&#099;&#111;&#109;</div>
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/tttej/">
+                        <svg xmlns="http://www.w3.org/2000/svg"><path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"/></svg>
+                    <div class="linktext">/tttej</div>
+                    </a>
+                </div>
+                <div class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg"><path d="M16.2850,0.00000C9.67367,0.00000,4.29433,5.37933,4.29433,11.9913c0.00000,1.72467,0.353000,3.37133,1.04867,4.89467c2.99800,6.56033,8.74600,13.4867,10.4367,15.4530c0.126667,0.147000,0.311333,0.231667,0.505667,0.231667s0.379000-0.0846667,0.505667-0.231667c1.69000-1.96600,7.43800-8.89200,10.4370-15.4530c0.696000-1.52333,1.04867-3.17000,1.04867-4.89467C28.2760,5.37933,22.8967,0.00000,16.2850,0.00000zM16.2850,18.2197c-3.43433,0.00000-6.22867-2.79433-6.22867-6.22867c0.00000-3.43467,2.79433-6.22900,6.22867-6.22900s6.22867,2.79433,6.22867,6.22900C22.5140,15.4253,19.7197,18.2197,16.2850,18.2197z"/></svg>
+                    <div class="linktext">San Francisco</div>
+                </div>
+            </div>
         </main>
     </body>
 </html>
